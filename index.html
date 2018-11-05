@@ -1,0 +1,1776 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="favicon.png" type="image/png" sizes="16x16">
+  <link rel="stylesheet" href="./css/f_f.css">
+  <link rel="stylesheet" href="./css/documentation.css">
+  <link rel="stylesheet" href="./css/NavMenu.css">
+  <link rel="stylesheet" href="./css/scroll.css">
+  <!-- ICON NEEDS FONT AWESOME FOR CHEVRON UP ICON -->
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <title>F_F</title>
+</head>
+<body>
+  <!-- BUTTON FOR NAV BAR --->
+  <div class="button">
+    <span class="line"></span>
+    <span class="line"></span>
+    <span class="line"></span>
+  </div>
+  <!-- BUTTON FOR NAV BAR END--->
+  <!-- NAV BAR MENU -->
+  <div class='menu'>
+
+    <div class="logo_wrapper">
+      <a href="/" class="link">
+        <img src="F_F.png" alt="logo" class="logo">
+      </a>
+    </div>
+    <span class="version">v1.0.0</span>
+
+    <nav>
+      <ul>
+        <li>
+          <a href='#' data-class='row_flex_nav_is_visible' style="text-transform: uppercase;">Grid system for Row flex</a>
+        </li>
+        <li>
+          <a href='#' data-class='hor_ver_align_nav_is_visible'>Horizontal and vertical alignment</a>
+        </li>
+        <li>
+          <a href='#' data-class='hor_auto_align_nav_is_visible'>Automatic horizontal alignment</a>
+        </li>
+        <li>
+          <a href='#' data-class='align_items_property_nav_is_visible'>The align-items Property</a>
+        </li>
+        <li>
+          <a href='#' data-class='align_self_property_nav_is_visible'>The align-self Property</a>
+        </li>
+        <li>
+          <a href='#' data-class='order_nav_is_visible'>The order Property</a>
+        </li>
+        <li>
+          <a href='#' data-class='flex_box_proportions_nav_is_visible'>The flex-box proportions</a>
+        </li>
+        <li>
+          <a href='#' data-class='flex_basis_property_nav_is_visible'>The flex-basis Property</a>
+        </li>
+        <li>
+          <a href='#' data-class='flex_property_nav_is_visible'>The flex Property</a>
+        </li>
+        <li>
+          <a href='#' data-class='flex_media_nav_is_visible'>The flex Media Queries</a>
+        </li>
+        <li>
+          <a href='#' data-class='grid_system_column_nav_is_visible' style="text-transform: uppercase;">Grid system for Column flex</a>
+        </li>
+        <li>
+          <a href='#' data-class='hor_ver_align_column_nav_is_visible'>Horizontal and vertical alignment</a>
+        </li>
+        <li>
+          <a href='#' data-class='flex_property_column_nav_is_visible'>The flex Property</a>
+        </li>
+        <li>
+          <a href='#' data-class='flex_buttons_nav_is_visible'>The flex Buttons</a>
+        </li>
+        <li>
+          <a class="responsive_site" href='site.html' target="_blank">Responsive Website</a>
+        </li>
+        <li>
+          <a class="responsive_gallery" href='gallery.html' target="_blank">Responsive Image Gallery</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!-- NAV BAR MENU END -->
+
+  <section class="section row_flex_nav content">
+    <span class="wrapper_for_nav">
+
+    <h2 class="text_center">row_flex
+      <br>
+      <span>
+      Главная ось контейнера направлена так же, как и ориентация текста, по умолчанию слева направо.
+      Но если значение dir задано как rtl, то направление оси идёт справа налево.
+      <br>
+      Дочерние элементы контейнера автоматически стают flex элементами
+      <br>
+      При row_flex_reverse гибкие блоки ведут себя, также, как row_flex, но меняются местами начальная и конечная точки
+      и главная ось направлена справа налево.
+      Учитывайте если значение dir задано как rtl, то направление оси идёт слева направо.
+    </span>
+    </h2>
+    <h3 class="text_center green">Grid system for row_flex</h3>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+        <div class="block_flex_12">block_flex_12</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+        <div class="block_flex_11">block_flex_11</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+        <div class="block_flex_10">block_flex_10</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_9">block_flex_9</div>
+        <div class="block_flex_9">block_flex_9</div>
+        <div class="block_flex_9">block_flex_9</div>
+        <div class="block_flex_9">block_flex_9</div>
+        <div class="block_flex_9">block_flex_9</div>
+        <div class="block_flex_9">block_flex_9</div>
+        <div class="block_flex_9">block_flex_9</div>
+        <div class="block_flex_9">block_flex_9</div>
+        <div class="block_flex_9">block_flex_9</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_8">block_flex_8</div>
+        <div class="block_flex_8">block_flex_8</div>
+        <div class="block_flex_8">block_flex_8</div>
+        <div class="block_flex_8">block_flex_8</div>
+        <div class="block_flex_8">block_flex_8</div>
+        <div class="block_flex_8">block_flex_8</div>
+        <div class="block_flex_8">block_flex_8</div>
+        <div class="block_flex_8">block_flex_8</div>
+
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_7 text_center">
+          Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magni corporis id assumenda molestiae, vel!
+        </div>
+        <div class="block_flex_7 self_end">block_flex_7 <br> self_end</div>
+        <div class="block_flex_7 self_center">block_flex_7 <br> self_center</div>
+        <div class="block_flex_7 self_start">block_flex_7 <br> self_start</div>
+        <div class="block_flex_7">block_flex_7</div>
+        <div class="block_flex_7">block_flex_7</div>
+        <div class="block_flex_7 self_stretch">block_flex_7 <br> self_stretch</div>
+
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_6">
+          block_flex_6 <br>
+          Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magni corporis id assumenda molestiae, vel!
+        </div>
+        <div class="block_flex_6">block_flex_6</div>
+        <div class="block_flex_6">block_flex_6</div>
+        <div class="block_flex_6">block_flex_6</div>
+        <div class="block_flex_6">block_flex_6</div>
+        <div class="block_flex_6">block_flex_6</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_5">block_flex_5</div>
+        <div class="block_flex_5">block_flex_5</div>
+        <div class="block_flex_5">block_flex_5</div>
+        <div class="block_flex_5">block_flex_5</div>
+        <div class="block_flex_5">block_flex_5</div>
+
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_4">block_flex_4</div>
+        <div class="block_flex_4">block_flex_4</div>
+        <div class="block_flex_4">block_flex_4</div>
+        <div class="block_flex_4">block_flex_4</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_3">block_flex_3</div>
+        <div class="block_flex_3">block_flex_3</div>
+        <div class="block_flex_3">block_flex_3</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_2">block_flex_2</div>
+        <div class="block_flex_2">block_flex_2</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_1">block_flex_1</div>
+      </div>
+    </div>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="block_flex_4">block_flex_4</div>
+        <div class="block_flex_2">block_flex_2</div>
+        <div class="block_flex_4">block_flex_4</div>
+        <div class="block_flex_1">block_flex_1</div>
+      </div>
+    </div>
+    <br><br><br>
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--horizontal and vertical alignment-->
+<!--horizontal and vertical alignment-->
+<!--horizontal and vertical alignment-->
+  <section class="section hor_ver_align_nav content">
+    <span class="wrapper_for_nav">
+    <h2 class="text_center green">Horizontal and vertical alignment for row_flex</h2>
+    <br>
+
+    <h2 class="text_center" style="text-transform: uppercase">Perfect Centering V-1</h2>
+    <div class="container_flex">
+      <div class="row_flex content_center" style="height: 300px; background-color: yellow; position: relative;">
+        <h2 style="position: absolute;
+               top: 0;">content_center</h2>
+        <div class="self_center text_center" style="height: 100px; background-color: red; width: 100px;">self_center <br></div>
+      </div>
+    </div>
+    <br>
+
+    <h2 class="text_center" style="text-transform: uppercase">Perfect Centering V-2</h2>
+    <div class="container_flex">
+      <div class="row_flex content_center items_center" style="height: 300px; background-color: yellow; position: relative;">
+        <h2 style="position: absolute;
+               top: 0;
+               text-align: center;">content_center<br>items_center</h2>
+        <div class="text_center" style="height: 100px; background-color: red; width: 100px;"><br></div>
+      </div>
+    </div>
+    <br>
+
+    <div class="container_flex">
+      <div class="row_flex content_start" style="height: 300px; background-color: yellow; position: relative;">
+        <h2 style="position: absolute;
+               top: 0;">content_start</h2>
+        <div class="self_center text_center" style="height: 100px; background-color: red; width: 100px;">self_center <br></div>
+      </div>
+    </div>
+    <br>
+    <div class="container_flex">
+      <div class="row_flex content_end" style="height: 300px; background-color: yellow; position: relative;">
+        <h2 style="position: absolute;
+               top: 0;">content_end</h2>
+        <div class="self_center text_center" style="height: 100px; background-color: red; width: 100px;">self_center <br></div>
+      </div>
+    </div>
+    <br>
+    <div class="container_flex">
+      <div class="row_flex content_center" style="height: 300px; background-color: yellow; position: relative;">
+        <h2 style="position: absolute;">content_center</h2>
+        <div class="self_end text_center" style="height: 100px; background-color: red; width: 100px;">self_end <br></div>
+      </div>
+    </div>
+    <br>
+    <div class="container_flex">
+      <div class="row_flex content_center" style="height: 300px; background-color: yellow; position: relative;">
+        <h2 style="position: absolute; bottom: 0;">content_center</h2>
+        <div class="self_start  text_center" style="height: 100px; background-color: red; width: 100px;">self_start</div>
+      </div>
+    </div>
+    <br>
+    <div class="container_flex">
+      <div class="row_flex content_end" style="height: 300px; background-color: yellow; position: relative;">
+        <h2 style="position: absolute;
+               bottom: 0;">content_end</h2>
+        <div class="self_start  text_center" style="height: 100px; background-color: red; width: 100px;">self_start</div>
+      </div>
+    </div>
+    <br>
+    <div class="container_flex">
+      <div class="row_flex content_start" style="height: 300px; background-color: yellow; position: relative;">
+        <h2 style="position: absolute;
+               top: 0;">content_start</h2>
+        <div class="self_end  text_center" style="height: 100px; background-color: red; width: 100px;">self_end</div>
+      </div>
+    </div>
+    <br><br><br>
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--Horizontal auto alignment-->
+<!--Horizontal auto alignment-->
+<!--Horizontal auto alignment-->
+  <section class="section hor_auto_align_nav content">
+    <span class="wrapper_for_nav">
+
+    <h2 class="text_center green">Automatic horizontal alignment</h2>
+    <br>
+    <h2 class="text_center">Works only for the main container with a width: 100%</h2>
+    <h3 class="text_center">With flex-wrap: wrap</h3>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+    <div style="width: 100%; padding: 0;" class="container_flex">
+      <div class="row_flex">
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+      </div><br>
+    </div>
+
+    <br>
+
+    <h2 class="text_center">Works only for the main container with a width: 100%</h2>
+    <h3 class="text_center">With flex-wrap: nowrap</h3>
+    <h4 class="text_center">Change the screen size and you will see not adaptive flexible boxes</h4>
+    <div style="width: 100%; padding: 0;" class="container_flex">
+      <div class="row_flex" style="width: 100%; flex-wrap: nowrap">
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+      </div><br>
+    </div>
+      <!--content_space_between-->
+    <h2 class="text_center green">The justify-content Property</h2>
+    <h3 class="text_center">content_space_between
+      <br>
+      <span>Флексы равномерно распределяются по всей строке. Первый и последний элемент
+      прижимаются к соответствующим краям контейнера.
+    </span>
+    </h3>
+    <h3 class="text_center">Works only for the main container with a width: 100%</h3>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+    <div style="width: 100%; padding: 0;" class="container_flex">
+      <div class="row_flex content_space_between">
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+      </div><br>
+    </div>
+      <!--content_space_around-->
+    <h3 class="text_center">content_space_around
+      <br>
+      <span>
+Флексы равномерно распределяются по всей строке. Пустое пространство перед первым и после
+    последнего элементов равно половине пространства между двумя соседними элементами.
+    </span>
+    </h3>
+    <h3 class="text_center">Works only for the main container with a width: 100%</h3>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+
+    <div style="width: 100%; padding: 0;" class="container_flex">
+      <div class="row_flex content_space_around">
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+      </div><br>
+    </div>
+      <!--content_space_evenly-->
+    <h3 class="text_center">content_space_evenly
+      <br>
+      <span>
+      Флексы распределяются так, что расстояние между любыми двумя соседними элементами,
+      а также перед первым и после последнего, было одинаковым.
+    </span>
+    </h3>
+    <h3 class="text_center">Works only for the main container with a width: 100%</h3>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+
+    <div style="width: 100%; padding: 0;" class="container_flex">
+      <div class="row_flex content_space_evenly">
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+      </div><br>
+    </div>
+      <!--content_center-->
+    <h3 class="text_center">content_center</h3>
+    <h3 class="text_center">Works only for the main container with a width: 100%</h3>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+
+    <div style="width: 100%; padding: 0;" class="container_flex">
+      <div class="row_flex content_center">
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+      </div><br>
+    </div>
+      <!--content_start-->
+    <h3 class="text_center">content_start</h3>
+    <h3 class="text_center">Works only for the main container with a width: 100%</h3>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+
+    <div style="width: 100%; padding: 0;" class="container_flex">
+      <div class="row_flex content_start">
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+      </div><br>
+    </div>
+      <!--content_end-->
+    <h3 class="text_center">content_end</h3>
+    <h3 class="text_center">Works only for the main container with a width: 100%</h3>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+
+    <div style="width: 100%; padding: 0;" class="container_flex">
+      <div class="row_flex content_end">
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+        <div style="width: 100px;" class="block_flex_2">block_flex_2 <br>width: 100px</div>
+      </div><br>
+    </div>
+    <br><br><br>
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--Align Items-->
+<!--Align Items-->
+<!--Align Items-->
+  <section class="section align_items_property_nav content">
+    <span class="wrapper_for_nav">
+
+    <h2 class="text_center green">The align-items Property
+      <br>
+      <span>
+      Свойство align-items выравнивает флекс-элементы внутри контейнера в перпендикулярном направлении.
+    </span>
+    </h2>
+    <br>
+
+
+    <h2 class="text_center">items_baseline
+      <br>
+      <span>
+    Флексы выравниваются по их базовой линии.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_baseline">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="text_center">items_start
+      <br>
+      <span>
+    Флексы выравниваются в начале поперечной оси контейнера.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_start">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="text_center">items_end
+      <br>
+      <span>
+    Флексы выравниваются в конце поперечной оси контейнера.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_end">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="text_center">items_center
+      <br>
+      <span>
+    Флексы выравниваются по линии поперечной оси.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_center">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="text_center">items_stretch
+      <br>
+      <span>
+    Флексы растягиваются таким образом, чтобы занять всё доступное пространство контейнера.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_stretch">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+
+  </section>
+<!--align-self-->
+<!--align-self-->
+<!--align-self-->
+  <section class="section align_self_property_nav content">
+    <span class="wrapper_for_nav">
+
+    <h2 class="text_center green">The align-self Property
+      <br>
+      <span>
+      Свойство align-self выравнивает флекс-элементы текущей строки, переписывая значение align-items.
+    </span>
+    </h2>
+
+    <h2 class="text_center">self_start
+      <br>
+      <span>
+    Элемент выравнивается в начале поперечной оси контейнера.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_stretch">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block self_start" style="color: red"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="text_center">self_stretch
+      <br>
+      <span>
+      Элемент растягивается таким образом, чтобы занять всё свободное пространство контейнера по поперечной оси.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_stretch">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block self_stretch" style="color: red"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="text_center">self_end
+      <br>
+      <span>
+    Элемент выравнивается в конце поперечной оси контейнера.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_stretch">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block self_end" style="color: red"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="text_center">self_center
+      <br>
+      <span>
+    Элемент выравнивается по центральной линии на поперечной оси.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_stretch">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block self_center" style="color: red"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h2 class="text_center">self_baseline
+      <br>
+      <span>
+    Элемент выравнивается по базовой линии текста.
+  </span>
+    </h2>
+    <div class="container_flex">
+      <div class="align-wrapper items_baseline">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block self_baseline" style="color: red"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+        <div class="align-block"><small>4</small></div>
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h6>2</h6></div>
+        <div class="align-block"><h3>3</h3></div>
+      </div>
+    </div>
+    <br><br><br>
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--ORDER-->
+<!--ORDER-->
+<!--ORDER-->
+  <section class="section order_nav content">
+    <span class="wrapper_for_nav">
+
+    <h2 class="text_center green">The order Property
+      <br>
+      <span>
+      Определяет порядок вывода флексов внутри флекс-контейнера.
+      Элементы располагаются согласно значениям свойства order от меньшего к большему.
+      При равных значениях order элементы
+      выводятся в том порядке, в каком они появляются в исходном коде.
+  </span>
+    </h2>
+
+    <h2 class="text_center">Normal</h2>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h1>2</h1></div>
+        <div class="align-block"><h1>3</h1></div>
+        <div class="align-block"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+        <div class="align-block"><h1>9</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+
+    <h3 class="text_center">With order_9 for the first block</h3>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="align-block order_1"><h1>1</h1></div>
+        <div class="align-block"><h1>2</h1></div>
+        <div class="align-block"><h1>3</h1></div>
+        <div class="align-block"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+        <div class="align-block"><h1>9</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h3 class="text_center">With order_9 for the first block</h3>
+    <h3 class="text_center">With order_8 for the second block</h3>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="align-block order_9"><h1>1</h1></div>
+        <div class="align-block order_8"><h1>2</h1></div>
+        <div class="align-block"><h1>3</h1></div>
+        <div class="align-block"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+        <div class="align-block"><h1>9</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h3 class="text_center">With order_9 for the first block</h3>
+    <h3 class="text_center">With order_8 for the second block</h3>
+    <h3 class="text_center">With order_7 for the third block</h3>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="align-block order_9"><h1>1</h1></div>
+        <div class="align-block order_8"><h1>2</h1></div>
+        <div class="align-block order_7"><h1>3</h1></div>
+        <div class="align-block"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+        <div class="align-block"><h1>9</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h3 class="text_center">With order_9 for the first block</h3>
+    <h3 class="text_center">With order_8 for the second block</h3>
+    <h3 class="text_center">With order_7 for the third block</h3>
+    <h3 class="text_center">With order_6 for the fourth block</h3>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="align-block order_9"><h1>1</h1></div>
+        <div class="align-block order_8"><h1>2</h1></div>
+        <div class="align-block order_7"><h1>3</h1></div>
+        <div class="align-block order_6"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+        <div class="align-block"><h1>9</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h3 class="text_center">With order_9 for the first block</h3>
+    <h3 class="text_center">With order_8 for the second block</h3>
+    <h3 class="text_center">With order_7 for the third block</h3>
+    <h3 class="text_center">With order_6 for the fourth block</h3>
+    <h3 class="text_center">With order_-1 for the sixth block</h3>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="align-block order_9"><h1>1</h1></div>
+        <div class="align-block order_8"><h1>2</h1></div>
+        <div class="align-block order_7"><h1>3</h1></div>
+        <div class="align-block order_6"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block order_-1"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+        <div class="align-block"><h1>9</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+
+  </section>
+<!--The flex-box proportions-->
+<!--The flex-box proportions-->
+<!--The flex-box proportions-->
+  <section class="section flex_box_proportions_nav content">
+    <span class="wrapper_for_nav">
+
+    <h2 class="text_center green">The flex-box proportions</h2>
+
+    <h3 class="text_center">The flex-grow Property
+      <br>
+      <span>
+      Определяет, насколько гибкий элемент будет расти относительно остальных элементов flex.
+      Для примера, если для всех элементов установлено значение 1, то они получатся равного размера.
+      Если какой-то элемент получил значение 2,
+      то его размер будет в два раза больше остальных.
+      <br>C width: 100%; для блоков не работает.
+      <br>Margin учитывается в пропорции
+    </span>
+    </h3>
+    <h4 class="text_center">grow_1 for the third block</h4>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="free-block"><h1>1</h1></div>
+        <div class="free-block"><h1>2</h1></div>
+        <div class="free-block red grow_1"><h1>3</h1></div>
+        <div class="free-block"><h1>4</h1></div>
+        <div class="free-block"><h1>5</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h4 class="text_center">grow_2 for the third block</h4>
+    <h4 class="text_center">grow_1 for other blocks</h4>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="free-block grow_1"><h1>1</h1></div>
+        <div class="free-block grow_1"><h1>2</h1></div>
+        <div class="free-block red grow_2"><h1>3</h1></div>
+        <div class="free-block grow_1"><h1>4</h1></div>
+        <div class="free-block grow_1"><h1>5</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h4 class="text_center">grow_10_5 for the third block</h4>
+    <h4 class="text_center">grow_0_3 for the first block</h4>
+    <h4 class="text_center">grow_1 for other blocks</h4>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="free-block grow_0_3"><h1>1</h1></div>
+        <div class="free-block grow_1"><h1>2</h1></div>
+        <div class="free-block red grow_10_5"><h1>3</h1></div>
+        <div class="free-block grow_1"><h1>4</h1></div>
+        <div class="free-block grow_1"><h1>5</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <br><br><br><br><br>
+
+    <h2 class="text_center green">flex-shrink
+      <br>
+      <span>
+       Свойство flex-shrink указывает, насколько гибкий
+       элемент будет уменьшаться относительно остальных элементов flex.
+    </span>
+    </h2>
+    <h4 class="text_center">shrink_1 for the first block</h4>
+    <h4 class="text_center">shrink_3 for the second block</h4>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="free-block width_100 shrink_1"><h1>1</h1></div>
+        <div class="free-block width_100 shrink_3"><h1>2</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h4 class="text_center">shrink_0 for the first block
+      <br>
+      <span>
+      Be carefully with shrink_0 when the blocks width is set to 100%!
+    </span>
+    </h4>
+    <h4 class="text_center">shrink_3 for the second block</h4>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="free-block width_100 shrink_0"><h1>1</h1></div>
+        <div class="free-block width_100 shrink_3"><h1>2</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+
+    <h4 class="text_center">shrink_1 for the first block</h4>
+    <h4 class="text_center">shrink_10_5 for the second block</h4>
+    <div class="container_flex">
+      <div class="align-wrapper">
+        <div class="free-block width_100 shrink_1"><h1>1</h1></div>
+        <div class="free-block width_100 shrink_10_5"><h1>2</h1></div>
+      </div>
+    </div>
+    <br><br><br>
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--The flex-basis Property-->
+<!--The flex-basis Property-->
+<!--The flex-basis Property-->
+  <section class="section flex_basis_property_nav content">
+    <span class="wrapper_for_nav">
+      <h2 class="text_center green">The flex-basis Property
+      <br>
+      <span>
+       Свойство flex-basis указывает начальную длину элемента flex.
+       <br>
+       Блок изменяет свою ширину при уменьшении экрана.
+       <br>
+       Ширина флекс контейнера должна быть 100% или не задана.
+    </span>
+    </h2>
+
+    <h4 class="text_center">basis_200px for the third block</h4>
+    <h4 class="text_center">basis_50px for the seventh block</h4>
+    <h4 class="text_center">basis_600px for the eighth block</h4>
+    <h4 class="text_center">Using without f_wrap</h4>
+    <div class="align-wrapper">
+      <div class="align-block"><h1>1</h1></div>
+      <div class="align-block"><h1>2</h1></div>
+      <div class="align-block red basis_200px"><h1>3</h1></div>
+      <div class="align-block"><h1>4</h1></div>
+      <div class="align-block"><h1>5</h1></div>
+      <div class="align-block"><h1>6</h1></div>
+      <div class="align-block red basis_50px"><h1>7</h1></div>
+      <div class="align-block red basis_600px"><h1>8</h1></div>
+    </div>
+    <br><br><br>
+
+    <h4 class="text_center">basis_200px for the third block</h4>
+    <h4 class="text_center">basis_50px for the seventh block</h4>
+    <h4 class="text_center">basis_600px for the eighth block</h4>
+    <h4 class="text_center">Using with f_wrap and style="height: auto"</h4>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+    <div class="align-wrapper f_wrap" style="height: auto">
+      <div class="align-block"><h1>1</h1></div>
+      <div class="align-block"><h1>2</h1></div>
+      <div class="align-block red basis_200px"><h1>3</h1></div>
+      <div class="align-block"><h1>4</h1></div>
+      <div class="align-block"><h1>5</h1></div>
+      <div class="align-block"><h1>6</h1></div>
+      <div class="align-block red basis_50px"><h1>7</h1></div>
+      <div class="align-block red basis_600px"><h1>8</h1></div>
+    </div>
+    <br><br><br>
+
+    <h4 class="text_center">basis_20pct <small>pct(percent)</small> for the third block</h4>
+    <h4 class="text_center">basis_100pct <small>pct(percent)</small> for the eighth block</h4>
+    <h4 class="text_center">Using with f_wrap and style="height: auto"</h4>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+    <div class="align-wrapper f_wrap" style="height: auto">
+      <div class="align-block"><h1>1</h1></div>
+      <div class="align-block"><h1>2</h1></div>
+      <div class="align-block red basis_20pct"><h1>3</h1></div>
+      <div class="align-block"><h1>4</h1></div>
+      <div class="align-block"><h1>5</h1></div>
+      <div class="align-block"><h1>6</h1></div>
+      <div class="align-block"><h1>7</h1></div>
+      <div class="align-block red basis_100pct"><h1>8</h1></div>
+    </div>
+    <br><br><br>
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--The flex Property-->
+<!--The flex Property-->
+<!--The flex Property-->
+  <section class="section flex_property_nav content">
+    <span class="wrapper_for_nav">
+      <h2 class="text_center green">The flex Property
+      <br>
+      <span>
+       Свойство flex является сокращенным свойством для flex-grow, flex-shrink, и flex-basis параметров.
+      <br>
+       none - Соответствует значению 0 0 auto.
+      <br>
+        flex: 1; - Соответствует значению: flex: 1 1 0%
+       <br>
+        <ul>
+          Значение по умолчанию: flex: 0 1 auto
+          <li>flex-grow: 0</li>
+          <li>flex-shrink: 1</li>
+          <li>flex-basis: auto</li>
+        </ul>
+      </span>
+      </h2>
+
+      <h4 class="text_center">flex_1_0_200px for the third block</h4>
+      <h4 class="text_center">Change the screen size and see how the third block works.</h4>
+      <div class="align-wrapper">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h1>2</h1></div>
+        <div class="align-block red flex_1_0_200px"><h1>3</h1></div>
+        <div class="align-block"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+      </div>
+      <br><br><br>
+
+      <h4 class="text_center">flex_1 for the third block</h4>
+      <h4 class="text_center">Change the screen size and see how the third block works.</h4>
+      <div class="align-wrapper">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h1>2</h1></div>
+        <div class="align-block red flex_1"><h1>3</h1></div>
+        <div class="align-block"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+      </div>
+      <br><br><br>
+
+      <h4 class="text_center">flex_0_0_300px for the third block</h4>
+      <h4 class="text_center">Change the screen size and see how the third block works.</h4>
+      <div class="align-wrapper">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h1>2</h1></div>
+        <div class="align-block red flex_0_0_300px"><h1>3</h1></div>
+        <div class="align-block"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+      </div>
+      <br><br><br>
+
+      <h4 class="text_center">flex_0_0_40pct <small>pct(percent)</small> for the third block</h4>
+      <h4 class="text_center">Change the screen size and see how the third block works.</h4>
+      <div class="align-wrapper">
+        <div class="align-block"><h1>1</h1></div>
+        <div class="align-block"><h1>2</h1></div>
+        <div class="align-block red flex_0_0_40pct"><h1>3</h1></div>
+        <div class="align-block"><h1>4</h1></div>
+        <div class="align-block"><h1>5</h1></div>
+        <div class="align-block"><h1>6</h1></div>
+        <div class="align-block"><h1>7</h1></div>
+        <div class="align-block"><h1>8</h1></div>
+      </div>
+      <br><br><br>
+
+      <h3 class="text_center green">Custom column grid</h3>
+
+      <h4 class="text_center">flex-pct-20 <small>pct(percent)</small> for the all blocks</h4>
+      <div class="align-wrapper">
+        <div class="align-block flex-pct-20 red"><h1>1</h1></div>
+        <div class="align-block flex-pct-20 red"><h1>2</h1></div>
+        <div class="align-block flex-pct-20 red"><h1>3</h1></div>
+        <div class="align-block flex-pct-20 red"><h1>4</h1></div>
+        <div class="align-block flex-pct-20 red"><h1>5</h1></div>
+      </div>
+      <br><br><br>
+
+      <h4 class="text_center">flex-pct-20 <small>pct(percent)</small> for the first and last blocks</h4>
+      <h4 class="text_center">flex-pct-10 <small>pct(percent)</small> for the second and fourth  blocks</h4>
+      <h4 class="text_center">flex-pct-40 <small>pct(percent)</small> for the third block</h4>
+      <div class="align-wrapper">
+        <div class="align-block flex-pct-20 red"><h1>1</h1></div>
+        <div class="align-block flex-pct-10 red"><h1>2</h1></div>
+        <div class="align-block flex-pct-40 red"><h1>3</h1></div>
+        <div class="align-block flex-pct-10 red"><h1>4</h1></div>
+        <div class="align-block flex-pct-20 red"><h1>5</h1></div>
+      </div>
+    <br><br><br>
+
+      <h4 class="text_center">flex-pct-5 <small>pct(percent)</small> for the all blocks</h4>
+      <div class="align-wrapper">
+        <div class="align-block flex-pct-5 red"><h1>1</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>2</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>3</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>4</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>5</h1></div>
+
+        <div class="align-block flex-pct-5 red"><h1>6</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>7</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>8</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>9</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>10</h1></div>
+
+        <div class="align-block flex-pct-5 red"><h1>11</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>12</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>13</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>14</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>15</h1></div>
+
+        <div class="align-block flex-pct-5 red"><h1>16</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>17</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>18</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>19</h1></div>
+        <div class="align-block flex-pct-5 red"><h1>20</h1></div>
+      </div>
+      <!--scroll -->
+      <div class="scroll_wrapper">
+        <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+      </div>
+      <!--scroll end-->
+    <br><br><br>
+
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--flex_media_nav-->
+<!--flex_media_nav-->
+<!--flex_media_nav-->
+  <section class="section  flex_media_nav content">
+    <span class="wrapper_for_nav">
+       <h2 class="text_center green">The flex Media Queries</h2>
+       <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div class="lg_block_12 block_flex_6 md_block_4 sm_block_2 xs_block_1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magni corporis id assumenda molestiae, vel!</p>
+        </div>
+        <div class="lg_block_12 block_flex_6 md_block_4 sm_block_2 xs_block_1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magni corporis id assumenda molestiae, vel!</p>
+        </div>
+        <div class="lg_block_12 block_flex_6 md_block_4 sm_block_2 xs_block_1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magni corporis id assumenda molestiae, vel!</p>
+        </div>
+        <div class="lg_block_12 block_flex_6 md_block_4 sm_block_2 xs_block_1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magni corporis id assumenda molestiae, vel!</p>
+        </div>
+        <div class="lg_block_12 block_flex_6 md_block_4 sm_block_2 xs_block_1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magni corporis id assumenda molestiae, vel!</p>
+        </div>
+        <div class="lg_block_12 block_flex_6 md_block_4 sm_block_2 xs_block_1">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+          elit. Magni corporis id assumenda molestiae, vel!</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text_center green">The grid system for Media Queries</h2>
+    <h4 class="text_center">Change the screen size and you will see an adaptive flexible boxes</h4>
+
+    <h4 class="text_center">For screen with min-width: 1990px</h4>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div style="margin: 1px; padding: 2px;" class="lg_block_12">
+          <p>lg_block_12</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_11">
+          <p>lg_block_11</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_10">
+          <p>lg_block_10</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_9">
+          <p>lg_block_9</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_8">
+          <p>lg_block_8</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_7">
+          <p>lg_block_7</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_6">
+          <p>lg_block_6</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_5">
+          <p>lg_block_5</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_4">
+          <p>lg_block_4</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_3">
+          <p>lg_block_3</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_2">
+          <p>lg_block_2</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="lg_block_1">
+          <p>lg_block_1</p>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="text_center">For screen with max-width: 1329px</h4>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div style="margin: 1px; padding: 2px;" class="md_block_12">
+          <p>md_block_12</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_11">
+          <p>md_block_11</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_10">
+          <p>md_block_10</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_9">
+          <p>md_block_9</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_8">
+          <p>md_block_8</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_7">
+          <p>md_block_7</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_6">
+          <p>md_block_6</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_5">
+          <p>md_block_5</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_4">
+          <p>md_block_4</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_3">
+          <p>md_block_3</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_2">
+          <p>md_block_2</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="md_block_1">
+          <p>md_block_1</p>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="text_center">For screen with max-width: 991px</h4>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div style="margin: 1px; padding: 2px;" class="sm_block_12">
+          <p>sm_block_12</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_11">
+          <p>sm_block_11</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_10">
+          <p>sm_block_10</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_9">
+          <p>sm_block_9</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_8">
+          <p>sm_block_8</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_7">
+          <p>sm_block_7</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_6">
+          <p>sm_block_6</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_5">
+          <p>sm_block_5</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_4">
+          <p>sm_block_4</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_3">
+          <p>sm_block_3</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_2">
+          <p>sm_block_2</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="sm_block_1">
+          <p>sm_block_1</p>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="text_center">For screen with max-width: 739px</h4>
+
+    <div class="container_flex">
+      <div class="row_flex">
+        <div style="margin: 1px; padding: 2px;" class="xs_block_12">
+          <p>xs_block_12</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_11">
+          <p>xs_block_11</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_10">
+          <p>xs_block_10</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_9">
+          <p>xs_block_9</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_8">
+          <p>xs_block_8</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_7">
+          <p>xs_block_7</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_6">
+          <p>xs_block_6</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_5">
+          <p>xs_block_5</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_4">
+          <p>xs_block_4</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_3">
+          <p>xs_block_3</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_2">
+          <p>xs_block_2</p>
+        </div>
+        <div style="margin: 1px; padding: 2px;" class="xs_block_1">
+          <p>xs_block_1</p>
+        </div>
+      </div>
+    </div>
+
+    </span>
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--column_flex-->
+<!--column_flex-->
+<!--column_flex-->
+  <section class="section grid_system_column_nav content">
+    <span class="wrapper_for_nav">
+      <h2 class="text_center" style="text-transform: uppercase">column_flex
+      <br>
+      <span>
+      Главная ось контейнера располагается вертикально и направлена сверху вниз.
+      <br>
+      Дочерние элементы контейнера автоматически стают flex элементами
+      <br>
+      При column_flex_reverse Главная ось располагается, также, вертикально,
+      но меняется положение начальной и конечной точек и ось направлена снизу вверх.
+      </span>
+      </h2>
+
+      <h2 class="text_center" style="text-transform: uppercase">Grid system for column_flex</h2>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_1">block_flex_1</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_2">block_flex_2</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_3">block_flex_3</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_4">block_flex_4</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_5">block_flex_5</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_6">block_flex_6</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_7">block_flex_7</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_8">block_flex_8</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_9">block_flex_9</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_10">block_flex_10</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_11">block_flex_11</div>
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <div class="column_flex">
+          <div class="block_flex_12">block_flex_12</div>
+        </div>
+      </div>
+    </span>
+    <br><br><br>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--horizontal and vertical alignment-->
+<!--horizontal and vertical alignment-->
+<!--horizontal and vertical alignment-->
+  <section class="section hor_ver_align_column_nav content">
+    <span class="wrapper_for_nav">
+
+      <h2 class="text_center" style="color: green;">Horizontal and vertical alignment for column_flex</h2>
+      <br>
+
+      <h2 class="text_center" style="text-transform: uppercase">Perfect Centering V-1</h2>
+      <div class="container_flex">
+        <div class="column_flex content_center" style="height: 300px; background-color: yellow; position: relative;">
+          <h2 style="position: absolute;
+                    top: 0;
+                    align-self: center;">content_center</h2>
+          <div class="self_center text_center" style="height: 100px; background-color: red; width: 100px;">self_center</div>
+        </div>
+      </div>
+      <br>
+
+      <h2 class="text_center" style="text-transform: uppercase">Perfect Centering V-2</h2>
+      <div class="container_flex">
+        <div class="column_flex content_center items_center text_center" style="height: 300px; background-color: yellow; position: relative;">
+          <h2 style="position: absolute;
+                    top: 0;
+                    align-self: center;">items_center<br>content_center</h2>
+          <div class="text_center" style="height: 100px; background-color: red; width: 100px;"></div>
+        </div>
+      </div>
+      <br>
+
+      <div class="container_flex">
+        <div class="column_flex content_center" style="height: 300px; background-color: yellow; position: relative;">
+          <h2 style="position: absolute;
+                    top: 0;
+                    align-self: center;">content_center</h2>
+          <div class="self_end text_center" style="height: 100px; background-color: red; width: 100px;">self_end</div>
+        </div>
+      </div>
+      <br>
+      <div class="container_flex">
+        <div class="column_flex content_center" style="height: 300px; background-color: yellow; position: relative;">
+          <h2 style="position: absolute;
+                    top: 0;
+                    align-self: center;">content_center</h2>
+          <div class="self_start  text_center" style="height: 100px; background-color: red; width: 100px;">self_start</div>
+        </div>
+      </div>
+
+    </span>
+    <br><br><br>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+<!--The flex Property-->
+<!--The flex Property-->
+<!--The flex Property-->
+  <section class="section  flex_property_column_nav content">
+    <span class="wrapper_for_nav">
+
+      <h2 class="text_center green">The flex Property
+        <br>
+        <span>
+         Свойство flex является сокращенным свойством для flex-grow, flex-shrink, и flex-basis параметров.
+        <br>
+         none - Соответствует значению 0 0 auto.
+        <br>
+          flex: 1; - Соответствует значению: flex: 1 1 0%
+         <br>
+          <ul>
+            Значение по умолчанию: flex: 0 1 auto
+            <li>flex-grow: 0</li>
+            <li>flex-shrink: 1</li>
+            <li>flex-basis: auto</li>
+          </ul>
+      </span>
+      </h2>
+
+      <h4 class="text_center">flex_1 for the main block</h4>
+      <div class="column_flex text_center" style="height: 25vh; margin: 0">
+        <main class="back_red" style="text-transform: uppercase; flex: 1;">main</main>
+        <footer class="back_green" style="text-transform: uppercase; padding: 10px;">footer</footer>
+      </div>
+
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+
+  <!--The flex buttons-->
+  <!--The flex buttons-->
+  <!--The flex buttons-->
+  <section class="section  flex_buttons_nav content">
+    <span class="wrapper_for_nav">
+
+      <h2 class="text_center green">The flex buttons
+      </h2>
+
+      <div class="container_flex">
+        <h4 class="text_center">row_flex</h4>
+        <div class="row_flex text_center content_center">
+          <h5 class="text_center width-pct-100">f_button_260_52 for button tag</h5><br>
+          <button class="f_button_260_52">Some text</button>
+
+          <br><br><br>
+
+          <h5 class="text_center width-pct-100">f_button_100pct_52 for button tag</h5><br>
+          <button class="f_button_100pct_52">Some text</button>
+
+          <br>
+          <h4 class="text_center red">Custom buttons</h4>
+
+          <h5 class="text_center width-pct-100">f_button + width-pct-50 for button tag</h5>
+          <button class="f_button width-pct-50">Some text</button>
+
+          <br>
+
+          <h5 class="text_center width-pct-100">f_button + width-pct-75 for button tag</h5>
+          <button class="f_button width-pct-75">Some text</button>
+
+        </div>
+      </div>
+
+      <div class="container_flex">
+        <h4 class="text_center">column_flex</h4>
+        <div class="column_flex text_center">
+          <h5 class="text_center">f_button_260_52 for button tag</h5>
+          <button class="f_button_260_52">Some text</button>
+
+          <br>
+
+          <h5 class="text_center">f_button_100pct_52 for button tag</h5>
+          <button class="f_button_100pct_52">Some text</button>
+
+          <br>
+          <h4 class="text_center red">Custom buttons</h4>
+
+          <h5 class="text_center">f_button + width-pct-50 for button tag</h5>
+          <button class="f_button width-pct-50">Some text</button>
+
+          <br>
+
+          <h5 class="text_center">f_button + width-pct-75 for button tag</h5>
+          <button class="f_button width-pct-75">Some text</button>
+
+        </div>
+      </div>
+
+    </span>
+
+    <!--scroll -->
+    <div class="scroll_wrapper">
+      <a href="javascript:" class="return-to-top"><i class="icon-chevron-up"></i></a>
+    </div>
+    <!--scroll end-->
+  </section>
+
+
+  <script src="components/NavMenu.js"></script>
+  <script src="components/scroll.js"></script>
+
+</body>
+</html>
