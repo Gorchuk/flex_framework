@@ -11,7 +11,7 @@ In this framework, I tried to take all the best from flexible flex layout. You c
 
 ### Main file
 *The main file that you could use in your projects. Please note it is minified.*
-f_f.css
+* [f_f.css](https://github.com/Gorchuk/flex_framework/blob/master/css/f_f.css)
 
 ## License
 This project is not licensed
